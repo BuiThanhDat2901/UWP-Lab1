@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="FormAccount.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FormAccount"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="-205,-18,205,-336">
+        <TextBox x:ConnectionId='2' x:Name="FirstName" HorizontalAlignment="Left" Margin="405,66,0,0" Padding="5, 5, 5, 5" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"                                     FontSize="15" Height="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="405,41,0,0" Text="First Name" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="146" FontSize="15" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='3' HorizontalAlignment="Left" Margin="668,41,0,0" Text="Last Name" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="146" FontSize="15"                                                 RenderTransformOrigin="0.49,0.617" FontWeight="Bold"/>
+        <TextBox x:ConnectionId='4' x:Name="LastName" HorizontalAlignment="Left" Margin="668,66,0,0" Padding="5, 5, 5, 5" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"                                     FontSize="15" Height="35"/>
+        <TextBlock x:ConnectionId='5' HorizontalAlignment="Left" Margin="408,369,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="146" FontSize="15"                                                 FontWeight="Bold"/>
+        <PasswordBox x:ConnectionId='6' x:Name="Password" HorizontalAlignment="Left" Margin="408,394,0,0" Padding="5, 5, 5, 5" VerticalAlignment="Top" Width="459" Height="35"                                               FontSize="15" Password=""/>
+        <TextBlock x:ConnectionId='7' HorizontalAlignment="Left" Margin="405,125,0,0" Text="Address" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="146" FontSize="15"                                                 RenderTransformOrigin="0.49,0.617" FontWeight="Bold"/>
+        <TextBox x:ConnectionId='8' x:Name="Address" HorizontalAlignment="Left" Margin="406,150,0,0" Padding="5, 5, 5, 5" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="462"                                     FontSize="15" Height="35"/>
+        <TextBlock x:ConnectionId='9' HorizontalAlignment="Left" Margin="933,45,0,0" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="146" FontSize="15"                                                 RenderTransformOrigin="0.49,0.617" FontWeight="Bold"/>
+        <TextBox x:ConnectionId='10' x:Name="Phone" HorizontalAlignment="Left" Margin="933,66,0,0" Padding="5, 5, 5, 5" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"                                     FontSize="15" Height="35"/>
+        <TextBlock x:ConnectionId='11' HorizontalAlignment="Left" Margin="735,213,0,0" Text="Avatar" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="146" FontSize="15"                                                 RenderTransformOrigin="0.49,0.617" FontWeight="Bold"/>
+        <TextBox x:ConnectionId='12' x:Name="Avatar" HorizontalAlignment="Left" Margin="735,233,0,0" Padding="5, 5, 5, 5" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="398"                                     FontSize="15" Height="35"/>
+        <TextBlock x:ConnectionId='13' HorizontalAlignment="Left" Margin="405,298,0,0" Text="Gender" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="146" FontSize="15"                                                 RenderTransformOrigin="0.49,0.617" FontWeight="Bold"/>
+        <RadioButton x:ConnectionId='14' x:Name="Male" Content="Male" Margin="408,323,0,0" VerticalAlignment="Top" FontSize="15" Height="39"                               IsChecked="True"/>
+        <RadioButton x:ConnectionId='15' x:Name="Female" Content="Female" Margin="577,323,0,0" VerticalAlignment="Top" FontSize="15" Height="39"/>
+        <RadioButton x:ConnectionId='16' x:Name="Other" Content="Other" Margin="735,323,0,0" VerticalAlignment="Top" FontSize="15" Height="39"/>
+        <TextBlock x:ConnectionId='17' HorizontalAlignment="Left" Margin="933,125,0,0" Text="Birthday" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="146" FontSize="15"                                                 RenderTransformOrigin="0.49,0.617" FontWeight="Bold"/>
+        <CalendarDatePicker x:ConnectionId='18' x:Name="Birthday" Margin="933,150,0,0" VerticalAlignment="Top" FontSize="15" Height="35" Width="200"/>
+        <TextBox x:ConnectionId='19' x:Name="Introduction" HorizontalAlignment="Left" Margin="406,481,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="727" Height="135" FontSize="15"/>
+        <TextBlock x:ConnectionId='20' HorizontalAlignment="Left" Margin="408,456,0,0" Text="Introduction" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="146" FontSize="15"                                                 FontWeight="Bold"/>
+        <Button x:ConnectionId='21' x:Name="btnSave" Content="SAVE" Margin="637,652,0,0" VerticalAlignment="Top" Width="150" Height="35"                       Background="{ThemeResource ButtonBackgroundThemeBrush}" FontWeight="Bold" FontSize="15"/>
+        <Button x:ConnectionId='22' x:Name="btnReset" Content="RESET" Margin="821,652,0,0" VerticalAlignment="Top" Width="150" Height="35"                        FontSize="15" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='23' x:Name="FirstNameError" HorizontalAlignment="Left" Margin="406,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="146" FontSize="12"                                                 FocusVisualPrimaryBrush="Red" Foreground="Red"/>
+        <TextBlock x:ConnectionId='24' x:Name="LastNameError" HorizontalAlignment="Left" Margin="669,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="197" FontSize="12"                                                 FocusVisualPrimaryBrush="Red" Foreground="Red"/>
+        <TextBlock x:ConnectionId='25' x:Name="PhoneError" HorizontalAlignment="Left" Margin="933,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="197" FontSize="12"                                                 FocusVisualPrimaryBrush="Red" Foreground="Red"/>
+        <TextBlock x:ConnectionId='26' x:Name="AddressError" HorizontalAlignment="Left" Margin="405,185,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="269" FontSize="12"                                                 FocusVisualPrimaryBrush="Red" Foreground="Red"/>
+        <TextBlock x:ConnectionId='27' x:Name="BirthdayError" HorizontalAlignment="Left" Margin="933,185,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="197" FontSize="12"                                                 FocusVisualPrimaryBrush="Red" Foreground="Red"/>
+        <TextBlock x:ConnectionId='28' x:Name="EmailError" HorizontalAlignment="Left" Margin="408,270,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="146" FontSize="12"                                                 FocusVisualPrimaryBrush="Red" Foreground="Red"/>
+        <TextBlock x:ConnectionId='29' x:Name="PasswordError" HorizontalAlignment="Left" Margin="408,429,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="343" FontSize="12"                                                 FocusVisualPrimaryBrush="Red" Foreground="Red"/>
+        <TextBlock x:ConnectionId='30' x:Name="IntroductionError" HorizontalAlignment="Left" Margin="408,616,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="146" FontSize="12"                                                 FocusVisualPrimaryBrush="Red" Foreground="Red"/>
+        <TextBox x:ConnectionId='31' x:Name="Email" HorizontalAlignment="Left" Margin="408,233,0,0" Padding="5, 5, 5, 5" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"                                     FontSize="15" Height="35"/>
+        <TextBlock x:ConnectionId='32' HorizontalAlignment="Left" Margin="408,213,0,0" Text="Email" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="146" FontSize="15"                                                 RenderTransformOrigin="0.49,0.617" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='33' x:Name="AvatarError" HorizontalAlignment="Left" Margin="735,270,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="146" FontSize="12"                                                 FocusVisualPrimaryBrush="Red" Foreground="Red"/>
+    </Grid>
+</Page>
+
